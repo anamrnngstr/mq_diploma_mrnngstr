@@ -1,0 +1,65 @@
+
+@import './header/header.css';
+@import './header/hamburger.css';
+@import './main/main_page.css';
+@import './main/aside_page.css';
+@import './main/search.css';
+@import './main/subscribe.css';
+@import './main/trends.css';
+@import './main/tags.css';
+@import './main/shop.css';
+@import './main/theme.css';
+@import './footer/copyright.css';
+@import './footer/footer.css';
+@import './main/popup.css';
+
+
+
+
+/*========================COMMON=================*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: open-sans-r, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: open-sans-r;
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: open-sans-b;
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+li {
+    list-style-type: none;
+}

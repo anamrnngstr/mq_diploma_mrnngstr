@@ -1,0 +1,37 @@
+.theme_section {
+    margin-top: 60px;
+    list-style: none;
+  }
+  
+  .theme_list {
+    list-style: none;
+  }
+  
+  .theme_link {
+    font-family: open-sans-b, sans-serif;
+    font-size: 14px;
+  }
+  
+  .theme_list_item {
+    border-bottom: 2px solid #eaeaea;
+    margin-top: 15px;
+  }
+  
+  .theme_list_item::after{
+  
+    content:"";
+    display: block;
+    position: relative;
+    margin-top: 14px;
+    background:#eeeeee;
+  }
+  
+  .theme_amount {
+    font-family: open-sans-b, sans-serif;
+    font-size: 12px;
+    color: #b59f5b;
+    margin-left: 5px;
+    vertical-align: top;
+  
+  }
+  

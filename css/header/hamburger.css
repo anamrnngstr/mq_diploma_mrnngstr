@@ -1,0 +1,21 @@
+.menu_btn {
+    width: 22px;
+    height: 2px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+
+}
+
+.menu_btn:focus~.menu_list,
+.menu_btn:active~.menu_list {
+    display: block;
+    background-color: #b59f5b;
+    opacity: 0.8;
+    text-align: center;
+    width: 200px;
+    min-height: 250px;
+    font-weight: 1000;
+    line-height: 3;
+}

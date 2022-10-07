@@ -1,0 +1,180 @@
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+
+}
+
+.header {
+    width: 100%;
+    min-height: 638px;
+    background-color: rgb(0, 0, 0);
+    background-image: url("../../images/banner-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    padding: 0 15px;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+
+}
+
+
+.top-panel {
+
+    padding: 15px 15px;
+    display: flex;
+
+}
+
+.logo {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+.menu_logo {
+    width: 250px;
+
+}
+
+
+.menu {
+    position: relative;
+    left: 100%;
+    list-style: none;
+
+}
+
+
+.menu_list {
+    font-size: 13px;
+    text-transform: uppercase;
+    display: none;
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+}
+
+
+.welcome_container {
+
+    padding-top: 250px;
+}
+
+.welcome_title {
+    text-align: center;
+    font-family: open-sans-b, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .header {
+        min-height: 390px;
+        background-color: rgb(110, 0, 0);
+        background-image: url('../../images/banner-bg-tablet.jpg');
+    }
+
+    .top-panel {
+        justify-content: space-between;
+        padding: 40px 37px;
+
+    }
+
+    .logo {
+        position: static;
+        margin-left: 0;
+        width: 150px;
+
+    }
+
+    .menu_logo {
+        width: 150px;
+    }
+
+    .menu {
+        position: static;
+
+    }
+
+    .welcome_container {
+        padding: 120px 0;
+        margin: auto;
+        max-width: 620px;
+    }
+
+    .welcome_title {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+.header_wrapper {
+    max-width: 1220px;
+    margin: auto;
+}
+
+    .header { 
+        min-height: 448px;
+        margin: auto;
+        background-color: aqua;
+        background-image: url("../../images/banner-bg.jpg");
+        padding: 0 110px;
+    }
+
+    .top-panel {
+        align-items: center;
+        
+
+    }
+
+    .menu_list {
+        display: inline-block;
+        color: #fff;
+        position: static;
+    }
+
+    .menu_list_item {
+        display: inline-block;
+    }
+
+    .menu_btn {
+        display: none;
+    }
+
+    .menu_list_item:nth-child(n+2) {
+        margin-left: 33px;
+    }
+
+    .welcome_title {
+        font-size: 40px;
+        max-width: 700px;
+
+    }
+
+    .welcome_container {
+        padding: 40px 0 150px;
+    }
+
+}
